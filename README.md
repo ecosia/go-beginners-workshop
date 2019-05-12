@@ -128,10 +128,21 @@ type festival struct {
 [Playground](https://play.golang.org/p/u2F8GUVU4vI)
 
 ### Loops
-// TODO
+Loops are used to execute blocks of code repeatedly given a certain condition. Unlike other languages, Go has only a `for` loop available:
+
+```go
+for i := 1; i <= 10; i++ {
+    fmt.Printf("%d ",i)
+}
+```
+
+You can use a `break` statement to terminate the `for` loop. Go will execute the next line of code outside the `for` loop.
+
+[Playground](https://play.golang.org/p/8nCbcAoEnXe)
 
 ### Functions and scopes
-// TODO
+
+[Playground](https://play.golang.org/p/yI1PJYsZgQA)
 
 ### Data structures
 
@@ -205,7 +216,7 @@ go func() { messages <- "Hey you" }()
 message := <-messages
 ```
 
-### References & resources
+### References and resources
 
 To continue your learning journey with Go, here are some useful and informative resources to help you get started:
 
