@@ -17,19 +17,77 @@ To get started, go to the [Go download page](https://golang.org/dl/) and downloa
 ## Language mechanics
 
 ### Variables
-// TODO
+When building your application, you will need at some point to store data in memory, at a specific location. To do that, you will need a variable - that is a memory location where a value of a specific type is stored. A variable can receive a value with the condition that the value has its same type.
 
-### Data types
-// TODO
+```go
+// Declare a variable of type integer
+var year int
+// Variable assignment
+year = 1990
+// New variable assignment of a value with the same integer type
+year = 2000
 
-#### Strings
-// TODO
+// Short variable declaration: you can use it when inside a function.
+currentYear := 2019
+```
 
-#### Integers
-// TODO
+[Playground](https://play.golang.org/p/jF4Q4q4c6wZ)
 
-#### Booleans
-// TODO
+### Types
+We will introduce here some of the most used types in Go, necessary to have a basic understand of the language.
+
+#### Basic types
+As described in [Tour of Go](https://tour.golang.org/basics/11), those are Go's basic types:
+
+```go
+bool
+
+string
+
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr
+
+byte // alias for uint8
+
+rune // alias for int32
+     // represents a Unicode code point
+
+float32 float64
+
+complex64 complex128
+```
+
+[Playground - strings](https://play.golang.org/p/RrjhOWoac39) |
+[Playground - integers, floats](https://play.golang.org/p/fQgWPpKA8XI) |
+[Playground - booleans](https://play.golang.org/p/dnwZ1r-E_GC)
+
+#### Pointers
+[Pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) in Go are also a type and they store a memory address. In Go, everything is passed by value: when passing data to a function, the function gets an entire copy of what's being passed. If you pass a `string` value, Go makes a copy of the `string` value. When passing a pointer value, Go makes a copy of the pointer. The correct usage of pointers is very important in Go: pointers are a way to efficiently share data, without having to make a copy of the entire value. The official [Go documentation](https://golang.org/doc/faq#Pointers) is a great resource to understand the usage of pointers and its advantages.
+
+To create a pointer to a variable `x`, we use the `&` syntax:
+
+```go
+// Declares a variable x
+x := 42
+// Creates a variable y of type pointer that creates a pointer to x
+y := &x
+```
+
+To read the value of the new created variable `y`, we use the `*` syntax. This is also called `dereference`:
+
+```go
+// Gets value of y variable
+value := *y
+// Changes the value of the y variable
+value = 22
+// Updates the y variable
+y = &value
+// Changes the value of y directly, without the need of assigning to a new variable
+*y = 23
+```
+
+[Playground](https://play.golang.org/p/kft3AgUqtoH)
+
 
 #### Structs
 Structs are a collection of fields. Fields can be accessed using a dot; there's no need to implement getters and setters. Note that only exported fields (capitalized) can be accessed outside a package.
@@ -147,7 +205,7 @@ go func() { messages <- "Hey you" }()
 message := <-messages
 ```
 
-### Resources
+### References & resources
 
 To continue your learning journey with Go, here are some useful and informative resources to help you get started:
 
@@ -168,3 +226,5 @@ To continue your learning journey with Go, here are some useful and informative 
 [Gophercises](https://gophercises.com/)
 
 [Go training - Ardan Labs](https://github.com/ardanlabs/gotraining/tree/master/topics)
+
+[Go 101](go101.org)
