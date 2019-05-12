@@ -1,5 +1,27 @@
 # Go beginners workshop
 
+## Contents
+- [Go beginners workshop](#go-beginners-workshop)
+  - [Contents](#contents)
+  - [Setting up your environment](#setting-up-your-environment)
+    - [Download go](#download-go)
+    - [Text editor suggestions](#text-editor-suggestions)
+  - [Language mechanics](#language-mechanics)
+    - [Variables](#variables)
+    - [Types](#types)
+      - [Basic types](#basic-types)
+      - [Pointers](#pointers)
+      - [Structs](#structs)
+    - [Loops](#loops)
+    - [Functions and scopes](#functions-and-scopes)
+    - [Data structures](#data-structures)
+      - [Arrays](#arrays)
+      - [Slices](#slices)
+    - [Concurrency](#concurrency)
+      - [Goroutines](#goroutines)
+      - [Channels](#channels)
+    - [References and resources](#references-and-resources)
+
 ## Setting up your environment
 
 ### Download go
