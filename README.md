@@ -8,12 +8,12 @@
     - [Text editor suggestions](#text-editor-suggestions)
   - [Language mechanics](#language-mechanics)
     - [Variables](#variables)
+    - [Scopes](#scopes)
     - [Types](#types)
       - [Basic types](#basic-types)
       - [Pointers](#pointers)
       - [Structs](#structs)
     - [Loops](#loops)
-    - [Functions and scopes](#functions-and-scopes)
     - [Data structures](#data-structures)
       - [Arrays](#arrays)
       - [Slices](#slices)
@@ -54,6 +54,11 @@ currentYear := 2019
 ```
 
 [Playground](https://play.golang.org/p/jF4Q4q4c6wZ)
+
+### Scopes
+The places in your Go program where you are allowed to use a variable is called scope. In Go, the scope of the variable is connected to the closest pair of curly braces `{` and `}`. There are different types of scopes in a Go program, as mentioned in the [official docs](https://golang.org/ref/spec#Declarations_and_scope).
+
+[Playground](https://play.golang.org/p/yI1PJYsZgQA)
 
 ### Types
 We will introduce here some of the most used types in Go, necessary to have a basic understand of the language.
@@ -161,10 +166,6 @@ for i := 1; i <= 10; i++ {
 You can use a `break` statement to terminate the `for` loop. Go will execute the next line of code outside the `for` loop.
 
 [Playground](https://play.golang.org/p/8nCbcAoEnXe)
-
-### Functions and scopes
-
-[Playground](https://play.golang.org/p/yI1PJYsZgQA)
 
 ### Data structures
 
