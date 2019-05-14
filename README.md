@@ -27,12 +27,30 @@
 ### Download go
 To get started, go to the [Go download page](https://golang.org/dl/) and download the binary distribution according to your operation system.
 
-// TODO: set up for each environment + check installation
+ #### Mac OS
+Download the OS X installer from https://golang.org/dl/. Double tap to start the installation. Follow the prompts and this should have Golang installed in /usr/local/go and would have also added the folder /usr/local/go/bin to your PATH environment variable.
 
-### Text editor suggestions
-// TODO: brief description
+ #### Windows
+Download the MSI installer from https://golang.org/dl/. Double tap to start the installation and follow the prompts. This will install Golang in location c:\Go and will also add the directory c:\Go\bin to your path environment variable.
+
+ #### Linux
+Download the tar file from https://golang.org/dl/ and unzip it to /usr/local.
+
+ Add /usr/local/go/bin to the PATH environment variable. This should install go in linux.
+
+
+Please note the above text is taken from this [tutorial](https://golangbot.com/golang-tutorial-part-1-introduction-and-installation/)
+
+### Workspace suggestions
+When writing code you can edit it any appllication that allows for text editing this includes applications such as Text Editor or notepad. However there are IDE(Integrated Development Environment) designed specifically to help write code and offer helpful tools such as syntax highlighting, auto correction, and terminals where you can run the code from. To understand more about the difference between Text Editors and IDEs we reccomend this [article](https://www.thoughtco.com/beginners-guide-to-using-an-ide-versus-a-text-editor-2034114).
+
+Almost every developer you ask has a IDE they prefer to use and when you are starting out it can be difficult to choose which one works best for you. Below are a couple we reccomend. Visual studio Code although a Microsoft product is open source, it has a range of plugins and is used by the majoirty of the developers at Ecosia.
+
+Goland is an IDE developed specifically for working with GO and has a number of language specific tools. Atom is another highly used and praised IDE. Which ever one you choose to work with, it will take a while to get used to all the short cuts and plugins but it is well worth taking some time to get to know it and set it up the way that works most efficiently for you.
 
 [Visual Studio Code](https://code.visualstudio.com/)
+
+[Goland](https://www.jetbrains.com/go/)
 
 [Atom](https://atom.io/)
 
