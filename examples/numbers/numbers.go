@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-// Numbers are vital for programming and there are a few different types you can use, below we cover the main
-// types of numbers and some simple maths.
+// Numbers are vital for programming and there are a few different types you can use. Below we cover the main
+// types of numbers and some simple math.
 
 var (
 	i int     // Integers – like their mathematical counterpart – are numbers without a decimal component.
@@ -15,10 +15,10 @@ var (
 func main() {
 	i := 42
 	fmt.Printf("i is of type %T\n", i)
-	f := float64(i) // This is called type conversion where we tale a var with one type and convert it to another.
+	f := float64(i) // This is called type conversion, where we take a value with one type and convert it to another.
 	fmt.Printf("f is of type %T\n", f)
 
-	var zeroValue int // when we declare a variable but dont give it a value it takes the zero value for a int this is 0
+	var zeroValue int // when we declare a int variable but don't give it a value, it takes the zero as default.
 	fmt.Printf("zeroValue has a value of %d\n", zeroValue)
 
 	// There are different sizes of int
