@@ -40,6 +40,8 @@ func main() {
 	// BEWARE of infinite loops! if your condition never stops being TRUE the loop
 	// will run forever and break your code. Alter this loop so it does not exit
 	// and prints the rest of our code :)
+
+	// Note if you run this on your computer it may not exit and you will have to break the loop by pressing `control c`
 	for {
 		sum += sum
 	}

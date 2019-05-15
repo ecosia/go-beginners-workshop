@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-// A boolean value (named after George Boole) is a special 1 bit integer type used to 
-// represent true and false (or on and off). 
+// A boolean value (named after George Boole) is a special 1 bit integer type used to
+// represent true and false (or on and off).
 // Three logical operators are used with boolean values:
 // &&	and
 // ||	or
@@ -15,7 +15,7 @@ func main() {
 
 	fmt.Println(true && true)
 	fmt.Println(true && false)
-	fmt.Println(true || truehttps://play.golang.org/p/fQgWPpKA8XI)
+	fmt.Println(true || true)
 	fmt.Println(true || false)
 	fmt.Println(!true)
 
