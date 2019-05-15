@@ -2,7 +2,7 @@
 
 # Go beginners workshop
 
-## Contents
+## Contents 📋
 - [Go beginners workshop](#go-beginners-workshop)
   - [Contents](#contents)
   - [Setting up your environment](#setting-up-your-environment)
@@ -26,14 +26,14 @@
     
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherSpaceMentor.png" width="250" title="Space mentor">
 
-## Setting up your environment
+## Setting up your environment 💻
 
-### Download go
+### Download go ⏬
 To get started, go to the [Go download page](https://golang.org/dl/) and download the binary distribution according to your operation system.
 
 // TODO: set up for each environment + check installation
 
-### Text editor suggestions
+### Text editor suggestions 📝
 // TODO: brief description
 
 [Visual Studio Code](https://code.visualstudio.com/)
@@ -42,9 +42,9 @@ To get started, go to the [Go download page](https://golang.org/dl/) and downloa
 
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GO_BUILD.png" width="250" title="Go Build">
 
-## Language mechanics
+## Language mechanics ⚙️
 
-### Variables
+### Variables 🅰️ 4️⃣
 When building your application, you will need at some point to store data in memory, at a specific location. To do that, you will need a variable - that is a memory location where a value of a specific type is stored. A variable can receive a value with the condition that the value has its same type.
 
 ```go
@@ -61,12 +61,12 @@ currentYear := 2019
 
 [Playground](https://play.golang.org/p/jF4Q4q4c6wZ)
 
-### Scopes
+### Scopes Ⓜ️
 The places in your Go program where you are allowed to use a variable is called scope. In Go, the scope of the variable is connected to the closest pair of curly braces `{` and `}`. There are different types of scopes in a Go program, as mentioned in the [official docs](https://golang.org/ref/spec#Declarations_and_scope).
 
 [Playground](https://play.golang.org/p/yI1PJYsZgQA)
 
-### Types
+### Types ♠️ ♥️ ♣️ ♦️
 We will introduce here some of the most used types in Go, necessary to have a basic understand of the language.
 
 #### Basic types
@@ -160,7 +160,7 @@ type festival struct {
 
 [Playground](https://play.golang.org/p/u2F8GUVU4vI)
 
-### Loops
+### Loops 🔄
 Loops are used to execute blocks of code repeatedly given a certain condition. Unlike other languages, Go has only a `for` loop available:
 
 ```go
@@ -173,7 +173,7 @@ You can use a `break` statement to terminate the `for` loop. Go will execute the
 
 [Playground](https://play.golang.org/p/8nCbcAoEnXe)
 
-### Data structures
+### Data structures 🔠
 
 #### Arrays
 In Go, an array is a collection of elements that have the same type. This collection has a fixed size: once you declare an array, its size cannot increase or decrease.
@@ -213,7 +213,7 @@ numbersSlice := numbers[:]
 
 [Playground](https://play.golang.org/p/4fNoR5hMm4h)
 
-### Concurrency
+### Concurrency ⛓️
 
 Concurrency means that multiple functions/tasks make progress at the same time and run independently. Go has a scheduler that works directly with the operation system, scheduling functions that are created as goroutines.
 
@@ -245,9 +245,10 @@ go func() { messages <- "Hey you" }()
 message := <-messages
 ```
 
+
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherInclusion.png" width="250" title="Community Gopher">
 
-## References and resources
+## References and resources 📚
 
 To continue your learning journey with Go, here are some useful and informative resources to help you get started:
 
