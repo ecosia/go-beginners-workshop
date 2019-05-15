@@ -2,10 +2,10 @@
 
 # Go beginners workshop
 
-## Contents 📋
+## Contents
 - [Go beginners workshop](#go-beginners-workshop)
-  - [Contents 📋](#contents-%F0%9F%93%8B)
-  - [Setting up your environment 💻](#setting-up-your-environment-%F0%9F%92%BB)
+  - [Contents](#contents)
+  - [Setting up your environment](#setting-up-your-environment)
     - [Download go](#download-go)
     - [Workspace suggestions](#workspace-suggestions)
   - [Language mechanics ⚙️](#language-mechanics-%E2%9A%99%EF%B8%8F)
@@ -19,14 +19,14 @@
     - [Data structures](#data-structures)
       - [Arrays](#arrays)
       - [Slices](#slices)
-    - [Concurrency ⛓️](#concurrency-%E2%9B%93%EF%B8%8F)
+    - [Concurrency](#concurrency)
       - [Goroutines](#goroutines)
       - [Channels](#channels)
-  - [References and resources 📚](#references-and-resources-%F0%9F%93%9A)
+  - [References and resources](#references-and-resources)
     
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherSpaceMentor.png" width="250" title="Space mentor">
 
-## Setting up your environment 💻
+## Setting up your environment
 
 ### Download go
 To get started, go to the [Go download page](https://golang.org/dl/) and download the binary distribution according to your operation system.
@@ -230,7 +230,7 @@ numbersSlice := numbers[:]
 
 [Playground](https://play.golang.org/p/4fNoR5hMm4h)
 
-### Concurrency ⛓️
+### Concurrency
 
 Concurrency means that multiple functions/tasks make progress at the same time and run independently. Go has a scheduler that works directly with the operation system, scheduling functions that are created as goroutines.
 
@@ -265,7 +265,7 @@ message := <-messages
 
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherInclusion.png" width="250" title="Community Gopher">
 
-## References and resources 📚
+## References and resources
 
 To continue your learning journey with Go, here are some useful and informative resources to help you get started:
 
