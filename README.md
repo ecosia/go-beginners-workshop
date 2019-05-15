@@ -92,7 +92,7 @@ complex64 complex128
 
 [Playground - strings](https://play.golang.org/p/RrjhOWoac39) |
 [Playground - integers, floats](https://play.golang.org/p/fQgWPpKA8XI) |
-[Playground - booleans](https://play.golang.org/p/dnwZ1r-E_GC)
+[Playground - booleans](https://play.golang.org/p/DigM6AI7ogJ)
 
 #### Pointers
 [Pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) in Go are also a type and they store a memory address. In Go, everything is passed by value: when passing data to a function, the function gets an entire copy of what's being passed. If you pass a `string` value, Go makes a copy of the `string` value. When passing a pointer value, Go makes a copy of the pointer. The correct usage of pointers is very important in Go: pointers are a way to efficiently share data, without having to make a copy of the entire value. The official [Go documentation](https://golang.org/doc/faq#Pointers) is a great resource to understand the usage of pointers and its advantages.
