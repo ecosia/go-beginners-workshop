@@ -13,13 +13,13 @@ var (
 )
 
 func main() {
-	// Below initialise the variables above with values
+	// Below, initialise the variables above with some values
 	// An example would be firstName = Jessica
 
 	// Printing Strings - click run to print the strings
 	fmt.Println("Hi there", firstName, secondName, "!")
 
-	// Multiline String you will see this also printed when you click run!
+	// Multiline String - you will see this also printed when you click run!
 	var multiLineString = `We are super happy
 to hear you want to learn GO!`
 
