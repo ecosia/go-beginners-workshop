@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GOPHER_AVATARS.jpg" width="950" title="Avatar Gophers">
+
 # Go beginners workshop
 
 ## Contents
@@ -21,6 +23,8 @@
       - [Goroutines](#goroutines)
       - [Channels](#channels)
     - [References and resources](#references-and-resources)
+    
+<img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherSpaceMentor.png" width="250" title="Space mentor">
 
 ## Setting up your environment
 
@@ -35,6 +39,8 @@ To get started, go to the [Go download page](https://golang.org/dl/) and downloa
 [Visual Studio Code](https://code.visualstudio.com/)
 
 [Atom](https://atom.io/)
+
+<img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GO_BUILD.png" width="250" title="Go Build">
 
 ## Language mechanics
 
@@ -239,7 +245,9 @@ go func() { messages <- "Hey you" }()
 message := <-messages
 ```
 
-### References and resources
+<img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherInclusion.png" width="250" title="Community Gopher">
+
+## References and resources
 
 To continue your learning journey with Go, here are some useful and informative resources to help you get started:
 
@@ -262,3 +270,6 @@ To continue your learning journey with Go, here are some useful and informative 
 [Go training - Ardan Labs](https://github.com/ardanlabs/gotraining/tree/master/topics)
 
 [Go 101](go101.org)
+
+<img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GoCommunity.png" width="950" title="Community Gopher">
+
