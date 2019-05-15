@@ -48,8 +48,8 @@ func main() {
 
 	fmt.Println("Congratulations you made the code exit the loop and print this line")
 
-	// As a added bonus here is a Loop which goes through a range of items (in this case strings)
-	// within a array ( we will cover arrays later so do not worry if you are not familiar with them!
+	// As a added bonus here is a loop which goes through a range of items (in this case strings)
+	// within a array (we will cover arrays later, so do not worry if you are not familiar with them!)
 	// This is a little more complex because it has an index as well as a value, don't worry if you don't
 	// fully understand this yet.
 	strings := []string{"hello", "world"}

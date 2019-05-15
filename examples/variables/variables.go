@@ -10,7 +10,7 @@ func main() {
 	// Variation on first way
 	var myString1 = "World"
 
-	// Second way to declare a Variable & initate it
+	// Second way to declare a Variable & initiate it
 	myString2 := "Hello!"
 
 	fmt.Println(myString + " " + myString1)
