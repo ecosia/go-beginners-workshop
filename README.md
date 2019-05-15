@@ -8,7 +8,7 @@
   - [Setting up your environment](#setting-up-your-environment)
     - [Download go](#download-go)
     - [Workspace suggestions](#workspace-suggestions)
-  - [Language mechanics ⚙️](#language-mechanics-%E2%9A%99%EF%B8%8F)
+  - [Language mechanics](#language-mechanics)
     - [Variables](#variables)
     - [Scopes](#scopes)
     - [Types](#types)
@@ -59,7 +59,7 @@ Goland is an IDE developed specifically for working with GO and has a number of 
 
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GO_BUILD.png" width="250" title="Go Build">
 
-## Language mechanics ⚙️
+## Language mechanics
 
 ### Variables
 When building your application, you will need at some point to store data in memory, at a specific location. To do that, you will need a variable - that is a memory location where a value of a specific type is stored. A variable can receive a value with the condition that the value has its same type.
