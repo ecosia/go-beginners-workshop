@@ -4,25 +4,25 @@
 
 ## Contents 📋
 - [Go beginners workshop](#go-beginners-workshop)
-  - [Contents](#contents)
-  - [Setting up your environment](#setting-up-your-environment)
-    - [Download go](#download-go)
-    - [Text editor suggestions](#text-editor-suggestions)
-  - [Language mechanics](#language-mechanics)
-    - [Variables](#variables)
-    - [Scopes](#scopes)
-    - [Types](#types)
+  - [Contents 📋](#contents-%F0%9F%93%8B)
+  - [Setting up your environment 💻](#setting-up-your-environment-%F0%9F%92%BB)
+    - [Download go ⏬](#download-go-%E2%8F%AC)
+    - [Workspace suggestions 📝](#workspace-suggestions-%F0%9F%93%9D)
+  - [Language mechanics ⚙️](#language-mechanics-%E2%9A%99%EF%B8%8F)
+    - [Variables 🅰️ 4️⃣](#variables-%F0%9F%85%B0%EF%B8%8F-4%EF%B8%8F%E2%83%A3)
+    - [Scopes Ⓜ️](#scopes-%E2%93%9C%EF%B8%8F)
+    - [Types ♠️ ♥️ ♣️ ♦️](#types-%E2%99%A0%EF%B8%8F-%E2%99%A5%EF%B8%8F-%E2%99%A3%EF%B8%8F-%E2%99%A6%EF%B8%8F)
       - [Basic types](#basic-types)
       - [Pointers](#pointers)
       - [Structs](#structs)
-    - [Loops](#loops)
-    - [Data structures](#data-structures)
+    - [Loops 🔄](#loops-%F0%9F%94%84)
+    - [Data structures 🔠](#data-structures-%F0%9F%94%A0)
       - [Arrays](#arrays)
       - [Slices](#slices)
-    - [Concurrency](#concurrency)
+    - [Concurrency ⛓️](#concurrency-%E2%9B%93%EF%B8%8F)
       - [Goroutines](#goroutines)
       - [Channels](#channels)
-    - [References and resources](#references-and-resources)
+  - [References and resources 📚](#references-and-resources-%F0%9F%93%9A)
     
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherSpaceMentor.png" width="250" title="Space mentor">
 
@@ -31,12 +31,29 @@
 ### Download go ⏬
 To get started, go to the [Go download page](https://golang.org/dl/) and download the binary distribution according to your operation system.
 
-// TODO: set up for each environment + check installation
+ #### Mac OS
+Download the OS X installer from https://golang.org/dl/. Double tap to start the installation. Follow the prompts and this should have Golang installed in /usr/local/go and would have also added the folder /usr/local/go/bin to your PATH environment variable.
 
-### Text editor suggestions 📝
-// TODO: brief description
+ #### Windows
+Download the MSI installer from https://golang.org/dl/. Double tap to start the installation and follow the prompts. This will install Golang in location c:\Go and will also add the directory c:\Go\bin to your path environment variable.
+
+ #### Linux
+Download the tar file from https://golang.org/dl/ and unzip it to /usr/local.
+
+ Add /usr/local/go/bin to the PATH environment variable. This should install go in linux.
+
+Please note the above text is taken from this [tutorial](https://golangbot.com/golang-tutorial-part-1-introduction-and-installation/)
+
+### Workspace suggestions 📝
+When writing code you can edit any application that allows for text editing. This includes applications such as Text Editor or Notepad. However there are IDE (Integrated Development Environment) designed specifically to help write code and offer helpful tools such as syntax highlighting, auto correction, and terminals where you can run the code from. To understand more about the difference between Text Editors and IDEs we recommend this [article](https://www.thoughtco.com/beginners-guide-to-using-an-ide-versus-a-text-editor-2034114).
+
+Almost every developer you ask has a IDE or text editor they prefer to use and when you are starting out it can be difficult to choose which one works best for you. Below are a couple we recommend. Visual studio Code although a Microsoft product is open source, it has a range of plugins and is used by the majority of the developers at Ecosia.
+
+Goland is an IDE developed specifically for working with GO and has a number of language specific tools. Atom is another highly used and praised IDE. Which ever one you choose to work with, it will take a while to get used to all shortcuts and plugins but it is well worth taking some time to get to know it and set it up the way that works most efficiently for you.
 
 [Visual Studio Code](https://code.visualstudio.com/)
+
+[Goland](https://www.jetbrains.com/go/)
 
 [Atom](https://atom.io/)
 
