@@ -15,7 +15,7 @@ func main() {
 	fmt.Println(movies[0])
 	fmt.Println(movies[1])
 
-	// Now is you can replace one of the movies with your favorite movie
+	// Now you can replace one of the movies with your favorite movie
 	// and print the result
 	// favoriteMovie := ""
 	// movies....
