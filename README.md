@@ -2,33 +2,33 @@
 
 # Go beginners workshop
 
-## Contents 📋
+## Contents
 - [Go beginners workshop](#go-beginners-workshop)
-  - [Contents 📋](#contents-%F0%9F%93%8B)
-  - [Setting up your environment 💻](#setting-up-your-environment-%F0%9F%92%BB)
-    - [Download go ⏬](#download-go-%E2%8F%AC)
-    - [Workspace suggestions 📝](#workspace-suggestions-%F0%9F%93%9D)
-  - [Language mechanics ⚙️](#language-mechanics-%E2%9A%99%EF%B8%8F)
-    - [Variables 🅰️ 4️⃣](#variables-%F0%9F%85%B0%EF%B8%8F-4%EF%B8%8F%E2%83%A3)
-    - [Scopes Ⓜ️](#scopes-%E2%93%9C%EF%B8%8F)
-    - [Types ♠️ ♥️ ♣️ ♦️](#types-%E2%99%A0%EF%B8%8F-%E2%99%A5%EF%B8%8F-%E2%99%A3%EF%B8%8F-%E2%99%A6%EF%B8%8F)
+  - [Contents](#contents)
+  - [Setting up your environment](#setting-up-your-environment)
+    - [Download go](#download-go)
+    - [Workspace suggestions](#workspace-suggestions)
+  - [Language mechanics](#language-mechanics)
+    - [Variables](#variables)
+    - [Scopes](#scopes)
+    - [Types](#types)
       - [Basic types](#basic-types)
       - [Pointers](#pointers)
       - [Structs](#structs)
-    - [Loops 🔄](#loops-%F0%9F%94%84)
-    - [Data structures 🔠](#data-structures-%F0%9F%94%A0)
+    - [Loops](#loops)
+    - [Data structures](#data-structures)
       - [Arrays](#arrays)
       - [Slices](#slices)
-    - [Concurrency ⛓️](#concurrency-%E2%9B%93%EF%B8%8F)
+    - [Concurrency](#concurrency)
       - [Goroutines](#goroutines)
       - [Channels](#channels)
-  - [References and resources 📚](#references-and-resources-%F0%9F%93%9A)
+  - [References and resources](#references-and-resources)
     
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherSpaceMentor.png" width="250" title="Space mentor">
 
-## Setting up your environment 💻
+## Setting up your environment
 
-### Download go ⏬
+### Download go
 To get started, go to the [Go download page](https://golang.org/dl/) and download the binary distribution according to your operation system.
 
  #### Mac OS
@@ -44,12 +44,12 @@ Download the tar file from https://golang.org/dl/ and unzip it to /usr/local.
 
 Please note the above text is taken from this [tutorial](https://golangbot.com/golang-tutorial-part-1-introduction-and-installation/)
 
-### Workspace suggestions 📝
-When writing code you can edit any application that allows for text editing. This includes applications such as Text Editor or Notepad. However there are IDE (Integrated Development Environment) designed specifically to help write code and offer helpful tools such as syntax highlighting, auto correction, and terminals where you can run the code from. To understand more about the difference between Text Editors and IDEs we recommend this [article](https://www.thoughtco.com/beginners-guide-to-using-an-ide-versus-a-text-editor-2034114).
+### Workspace suggestions
+When writing code you can use any text editing application, such as TextEdit or Notepad. However there are IDE (Integrated Development Environment) applications designed specifically for development, offering helpful tools such as syntax highlighting, auto correction, and terminals where you can run the code. To understand more about the difference between text editors and IDEs we recommend this [article](https://www.thoughtco.com/beginners-guide-to-using-an-ide-versus-a-text-editor-2034114).
 
-Almost every developer you ask has a IDE or text editor they prefer to use and when you are starting out it can be difficult to choose which one works best for you. Below are a couple we recommend. Visual studio Code although a Microsoft product is open source, it has a range of plugins and is used by the majority of the developers at Ecosia.
+Almost every developer you ask has an IDE or text editor they prefer to use. When you are starting out it can be difficult to choose which one works best for you. Below are a couple we recommend. Visual Studio Code, although a Microsoft product, is open source and it has a range of plugins. It's used by the majority of the developers at Ecosia.
 
-Goland is an IDE developed specifically for working with GO and has a number of language specific tools. Atom is another highly used and praised IDE. Which ever one you choose to work with, it will take a while to get used to all shortcuts and plugins but it is well worth taking some time to get to know it and set it up the way that works most efficiently for you.
+Goland is an IDE developed specifically for working with GO and has a number of language specific tools. Atom is another highly used and praised IDE. Whichever one you choose to work with, it will take a while to get used to all shortcuts and plugins but it is well worth taking some time to get to know it and set it up the way that works most efficiently for you.
 
 [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -59,9 +59,9 @@ Goland is an IDE developed specifically for working with GO and has a number of 
 
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GO_BUILD.png" width="250" title="Go Build">
 
-## Language mechanics ⚙️
+## Language mechanics
 
-### Variables 🅰️ 4️⃣
+### Variables
 When building your application, you will need at some point to store data in memory, at a specific location. To do that, you will need a variable - that is a memory location where a value of a specific type is stored. A variable can receive a value with the condition that the value has its same type.
 
 ```go
@@ -78,12 +78,12 @@ currentYear := 2019
 
 [Playground](https://play.golang.org/p/jF4Q4q4c6wZ)
 
-### Scopes Ⓜ️
+### Scopes
 The places in your Go program where you are allowed to use a variable is called scope. In Go, the scope of the variable is connected to the closest pair of curly braces `{` and `}`. There are different types of scopes in a Go program, as mentioned in the [official docs](https://golang.org/ref/spec#Declarations_and_scope).
 
 [Playground](https://play.golang.org/p/yI1PJYsZgQA)
 
-### Types ♠️ ♥️ ♣️ ♦️
+### Types
 We will introduce here some of the most used types in Go, necessary to have a basic understand of the language.
 
 #### Basic types
@@ -177,7 +177,7 @@ type festival struct {
 
 [Playground](https://play.golang.org/p/u2F8GUVU4vI)
 
-### Loops 🔄
+### Loops
 Loops are used to execute blocks of code repeatedly given a certain condition. Unlike other languages, Go has only a `for` loop available:
 
 ```go
@@ -190,7 +190,7 @@ You can use a `break` statement to terminate the `for` loop. Go will execute the
 
 [Playground](https://play.golang.org/p/8nCbcAoEnXe)
 
-### Data structures 🔠
+### Data structures
 
 #### Arrays
 In Go, an array is a collection of elements that have the same type. This collection has a fixed size: once you declare an array, its size cannot increase or decrease.
@@ -230,7 +230,7 @@ numbersSlice := numbers[:]
 
 [Playground](https://play.golang.org/p/4fNoR5hMm4h)
 
-### Concurrency ⛓️
+### Concurrency
 
 Concurrency means that multiple functions/tasks make progress at the same time and run independently. Go has a scheduler that works directly with the operation system, scheduling functions that are created as goroutines.
 
@@ -265,7 +265,7 @@ message := <-messages
 
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GopherInclusion.png" width="250" title="Community Gopher">
 
-## References and resources 📚
+## References and resources
 
 To continue your learning journey with Go, here are some useful and informative resources to help you get started:
 

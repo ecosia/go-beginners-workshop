@@ -19,22 +19,23 @@ func reset(i *int) {
 }
 
 func main() {
-	// When we work with values there are two ways we can pass them, say to a function.
+	// When we work with parameter values there are two ways we can pass them to a function.
 	// The first is what we call "pass by value"
 	number = 5
 	multiply(number)
-	// When we pass a value in this way the function receives it's own copy of number
+	// When we pass a value in this way the function receives its own *copy* of the number variable
 	// This means if the multiply function alters the number passed to it, it only affects
 	// its copy and not the original variable.
 	fmt.Println("number value outside multiply func: ", number)
 
-	// When we pass by value we are creating copies each time of our value and this can
-	// be a problem for memory, particular if we have low resources (such as on embedded systems for IoT)
-	// The other issue is we may want to alter a variable and be able to access it with the changes later.
+	// When we pass a parameter "by value" we are creating, each time, a copy of our original variable. This can
+	// be a problem for the memory, in particular if we have low resources (such as on embedded systems for IoT).
+	// The other issue is that we may want to alter a variable and be able to access it with the changes later.
 
-	// The second way we can pass a value is by passing its memory address - we call this a pointer.
-	// It uses the & to indicate it is a pointer. However you will see in the function signature we use a
-	// *
+	// The second way we can pass a parameter value is by passing its memory address - we call this a reference.
+	// We use the & operator to create a "pointer" to our number variable. A pointer is a special type that stores a memory address
+	// for a value of some specific type. The pointer declaration is marked with a * followed by the pointed type
+	// (as seen on the reset method parameter definition)
 	reset(&number)
 	fmt.Println("number value after reset func: ", number)
 
