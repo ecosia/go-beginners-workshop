@@ -20,8 +20,6 @@ var (
 	ExportableGlobalCat = "Vanessa"
 	// If the variable has a capital letter at the start this means it can be "exported", means
 	// if we import the package elsewhere we can access it from other packages.
-	// For this workshop we will not cover this but you can read more about it here:
-	// <LINK MISSING>
 )
 
 func main() {
