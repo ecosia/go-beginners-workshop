@@ -4,7 +4,14 @@
 package main
 
 // First, we need to import the net/http package from the standard library.
-import "net/http"
+import (
+	"fmt"
+	"net/http"
+)
+
+var (
+	port = "8080"
+)
 
 func main() {
 	// Then, in the main function, we install a handler function at the root path of our webserver.
@@ -12,7 +19,8 @@ func main() {
 	http.HandleFunc("/", hello)
 	// We start the HTTP server on port 8080 and with the default ServeMux via http.ListenAndServe.
 	// That’s a synchronous, or blocking, call, which will keep the program alive until interrupted.
-	http.ListenAndServe(":8080", nil)
+	fmt.Printf("Listening at localhost:%s", port)
+	http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
 }
 
 // The function hello is an http.HandlerFunc, which means it has a specific type signature, and can be passed as an argument to HandleFunc.
