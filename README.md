@@ -10,6 +10,7 @@
     - [Workspace suggestions](#workspace-suggestions)
   - [Language mechanics](#language-mechanics)
     - [Variables](#variables)
+    - [Functions](#functions)
     - [Scopes](#scopes)
     - [Types](#types)
       - [Basic types](#basic-types)
@@ -78,6 +79,11 @@ currentYear := 2019
 
 [Playground](https://play.golang.org/p/iLIXqjD8ayW)
 
+### Functions
+A function is a group of statements that together perform a task. Every Go program has at least one function, which is main(). You can divide your code into separate functions. How you divide your code among different functions is up to you, but logically, the division should be such that each function performs a specific task. [Tutorial point](https://www.tutorialspoint.com/go/go_functions.htm)
+
+[Playground](https://play.golang.org/p/AyD4N4zgdJx)
+
 ### Scopes
 The places in your Go program where you are allowed to use a variable is called scope. In Go, the scope of the variable is connected to the closest pair of curly braces `{` and `}`. There are different types of scopes in a Go program, as mentioned in the [official docs](https://golang.org/ref/spec#Declarations_and_scope).
 
@@ -109,7 +115,7 @@ complex64 complex128
 
 [Playground - strings](https://play.golang.org/p/nMrOiDk8uXX) |
 [Playground - integers, floats](https://play.golang.org/p/xAN0-OV78lB)
-[Playground - booleans](https://play.golang.org/p/XTGMij4eNsm)
+[Playground - booleans](https://play.golang.org/p/DigM6AI7ogJ)
 
 #### Pointers
 [Pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) in Go are also a type and they store a memory address. In Go, everything is passed by value: when passing data to a function, the function gets an entire copy of what's being passed. If you pass a `string` value, Go makes a copy of the `string` value. When passing a pointer value, Go makes a copy of the pointer. The correct usage of pointers is very important in Go: pointers are a way to efficiently share data, without having to make a copy of the entire value. The official [Go documentation](https://golang.org/doc/faq#Pointers) is a great resource to understand the usage of pointers and its advantages.
