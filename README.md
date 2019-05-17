@@ -76,12 +76,12 @@ year = 2000
 currentYear := 2019
 ```
 
-[Playground](https://play.golang.org/p/jF4Q4q4c6wZ)
+[Playground](https://play.golang.org/p/iLIXqjD8ayW)
 
 ### Scopes
 The places in your Go program where you are allowed to use a variable is called scope. In Go, the scope of the variable is connected to the closest pair of curly braces `{` and `}`. There are different types of scopes in a Go program, as mentioned in the [official docs](https://golang.org/ref/spec#Declarations_and_scope).
 
-[Playground](https://play.golang.org/p/yI1PJYsZgQA)
+[Playground](https://play.golang.org/p/0bcUSGtKeXo)
 
 ### Types
 We will introduce here some of the most used types in Go, necessary to have a basic understand of the language.
@@ -107,9 +107,9 @@ float32 float64
 complex64 complex128
 ```
 
-[Playground - strings](https://play.golang.org/p/RrjhOWoac39) |
-[Playground - integers, floats](https://play.golang.org/p/fQgWPpKA8XI) |
-[Playground - booleans](https://play.golang.org/p/DigM6AI7ogJ)
+[Playground - strings](https://play.golang.org/p/nMrOiDk8uXX) |
+[Playground - integers, floats](https://play.golang.org/p/xAN0-OV78lB)
+[Playground - booleans](https://play.golang.org/p/XTGMij4eNsm)
 
 #### Pointers
 [Pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) in Go are also a type and they store a memory address. In Go, everything is passed by value: when passing data to a function, the function gets an entire copy of what's being passed. If you pass a `string` value, Go makes a copy of the `string` value. When passing a pointer value, Go makes a copy of the pointer. The correct usage of pointers is very important in Go: pointers are a way to efficiently share data, without having to make a copy of the entire value. The official [Go documentation](https://golang.org/doc/faq#Pointers) is a great resource to understand the usage of pointers and its advantages.
@@ -136,7 +136,7 @@ y = &value
 *y = 23
 ```
 
-[Playground](https://play.golang.org/p/kft3AgUqtoH)
+[Playground](https://play.golang.org/p/3eRREFtFfJB)
 
 
 #### Structs
@@ -175,7 +175,7 @@ type festival struct {
 }
 ```
 
-[Playground](https://play.golang.org/p/u2F8GUVU4vI)
+[Playground](https://play.golang.org/p/M3ed_-cUdWH)
 
 ### Loops
 Loops are used to execute blocks of code repeatedly given a certain condition. Unlike other languages, Go has only a `for` loop available:
@@ -200,7 +200,7 @@ numbers := [5]int{5, 4, 3, 2, 1}
 ```
 Above we have declared an array with 5 elements, in which each element is an integer.
 
-[Playground](https://play.golang.org/p/k0-S_16N6tV)
+[Playground](https://play.golang.org/p/4WalWG0buHs)
 
 #### Slices
 Slices are much more used than arrays in Go and they are more flexible, since unlike arrays, they can be resized. They also provide a powerful interface for managing collections and support built-ins, like `append` and `make`. Slices are declared just like arrays, with the only difference being that you don't need to specify the length:
@@ -228,7 +228,7 @@ numbers := [5]int{5, 4, 3, 2, 1}
 numbersSlice := numbers[:]
 ```
 
-[Playground](https://play.golang.org/p/4fNoR5hMm4h)
+[Playground](https://play.golang.org/p/aPmGlu2SIzk)
 
 ### Concurrency
 
