@@ -82,7 +82,7 @@ currentYear := 2019
 ### Functions
 A function is a group of statements that together perform a task. Every Go program has at least one function, which is main(). You can divide your code into separate functions. How you divide your code among different functions is up to you, but logically, the division should be such that each function performs a specific task. [Tutorial point](https://www.tutorialspoint.com/go/go_functions.htm)
 
-[Playground](https://play.golang.org/p/AyD4N4zgdJx)
+[Playground](https://play.golang.org/p/C1jgJqncztx)
 
 ### Scopes
 The places in your Go program where you are allowed to use a variable is called scope. In Go, the scope of the variable is connected to the closest pair of curly braces `{` and `}`. There are different types of scopes in a Go program, as mentioned in the [official docs](https://golang.org/ref/spec#Declarations_and_scope).

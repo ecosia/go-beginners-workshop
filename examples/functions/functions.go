@@ -7,10 +7,11 @@ import (
 // In programming functions are fundamental!
 
 // we declare a function with the keyword func
-// as well as the function's name (in this case myFunction) we need to declare
-// what arguments the function takes. In this case one variable 's'.
-// As Go is statically typed language we also need to include what type 's' is.
-// Lastly we add to the function signature what the function returns in this case a string!
+// as well as the function's name (in this example we created 2 functions: myFunction and printString)
+// we also need to declare what arguments the function takes. In this case, a variable 's'.
+// As Go is a statically typed language we also need to include what type 's' is.
+// Lastly we add to the function signature (what the function returns) - in this case a string!
+
 func myFunction(s string) string {
 	return fmt.Sprintf("%s are magical", s)
 }
