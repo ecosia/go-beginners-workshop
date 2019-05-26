@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	// Declare an array of 5 strings
+	// Declare an array of 2 strings
 	var movies [2]string
 	fmt.Println(movies)
 

@@ -293,7 +293,7 @@ To continue your learning journey with Go, here are some useful and informative 
 
 [Go training - Ardan Labs](https://github.com/ardanlabs/gotraining/tree/master/topics)
 
-[Go 101](go101.org)
+[Go 101](https://go101.org/)
 
 <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GoCommunity.png" width="950" title="Community Gopher">
 
