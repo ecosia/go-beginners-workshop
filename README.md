@@ -2,6 +2,8 @@
 
 # Go beginners workshop
 
+⚠️ ***Please note that the content may not be representative of Ecosia's current engineering standards.***
+
 ## Contents
 - [Go beginners workshop](#go-beginners-workshop)
   - [Contents](#contents)
